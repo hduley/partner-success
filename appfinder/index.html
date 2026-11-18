@@ -98,7 +98,7 @@ footer{color:var(--muted);font-size:13px;max-width:80ch}
   <header>
     <div>
       <h1>MetaHMS <span>App Finder</span></h1>
-      <p class="sub">Every app available to load through our ArborXR library, from the Meta for Education store. Search, filter, or describe what a school wants and get the closest matches.</p>
+      <p class="sub">Every app available to load through our Meta HMS library, from the Meta for Education store. Search, filter, or describe what a school wants and get the closest matches.</p>
     </div>
     <div class="stat"><b id="total">0</b> apps in library</div>
   </header>
@@ -148,7 +148,7 @@ footer{color:var(--muted);font-size:13px;max-width:80ch}
   </div>
 
   <footer>
-    <p>Source: 53 screenshots of the Meta for Education catalogue in ArborXR (Nov 2026), 624 apps. Every app was checked online against its store listing in November 2026. The 58 marked <b>“Not found online”</b> couldn’t be matched to a listing, so preview them in ArborXR before recommending. Grade bands and tags are a starting point, not a content rating; check each app’s age rating and content before classroom use.</p>
+    <p>Source: 53 screenshots of the Meta for Education catalogue in Meta HMS (Nov 2026), 624 apps. Every app was checked online against its store listing in November 2026. The 58 marked <b>“Not found online”</b> couldn’t be matched to a listing, so preview them in Meta HMS before recommending. Grade bands and tags are a starting point, not a content rating; check each app’s age rating and content before classroom use.</p>
   </footer>
 </div>
 
@@ -283,7 +283,7 @@ async function ask(){
   const btn=$("askBtn"); btn.disabled=true; $("askOut").innerHTML=`<p class="askmsg">Thinking…</p>`;
   const sample=sampleOff?null:await samplePromise;
   if(!sample){showPicks(keywordPicks(q),"Closest matches by topic, subject and grade level. Preview each app before recommending it.");btn.disabled=false;return}
-  const prompt=`You help an education consultant find VR apps for schools. Schools can ONLY use apps from the library below (ArborXR / Meta for Education). A school has made this request:
+  const prompt=`You help an education consultant find VR apps for schools. Schools can ONLY use apps from the library below (Meta HMS / Meta for Education). A school has made this request:
 
 "${q}"
 
